@@ -35,15 +35,17 @@ To optimize memory and execution time, the raw JSON files were parsed line-by-li
 4. Run `main_notebook.ipynb`.
 
 ## 6. Repo Structure
+```text
 CSCE-676-project/
 │
-├── README.md                 # Project overview and setup instructions
+├── README.md                 # Project overview, results, and setup instructions
 ├── main_notebook.ipynb       # The final, fully optimized code and evaluation
 ├── requirements.txt          # Python package dependencies needed to run the code
 │
 └── checkpoints/              # Historic project milestones
     ├── checkpoint_1.ipynb    # Phase 1: EDA and Preprocessing
     └── checkpoint_2.ipynb    # Phase 2: Baseline models (PageRank & FP-Growth)
+```
 
 ## 7. Results Summary
 Traditional recommender systems completely collapse on users with 2 or fewer reviews due to 99.99% data sparsity. By bypassing traditional collaborative filtering and utilizing 2-hop network topology, the Graph Convolution model successfully generated accurate cross-domain recommendations, outperforming the mathematical baseline of random chance (~0.03%) by a factor of 100x.
